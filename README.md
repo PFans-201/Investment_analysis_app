@@ -15,7 +15,8 @@ This application provides a comprehensive investment analysis tool for stocks an
 6. Run `main.py` to start the daily analysis and alert system
 
 7. Recommended organization:
-`investment-analysis-app/
+<pre>
+investment-analysis-app/
 ├── data/
 │   └── user_config.json
 ├── src/
@@ -46,7 +47,8 @@ This application provides a comprehensive investment analysis tool for stocks an
 │   └── update_asset_list.py
 ├── main.py
 ├── requirements.txt
-└── README.md`
+└── README.md
+</pre>
 
 ## Features
 
