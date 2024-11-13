@@ -14,6 +14,40 @@ This application provides a comprehensive investment analysis tool for stocks an
 5. Run `scripts/update_asset_list.py` to initialize your tracked assets
 6. Run `main.py` to start the daily analysis and alert system
 
+7. Recommended organization:
+`investment-analysis-app/
+├── data/
+│   └── user_config.json
+├── src/
+│   ├── data_acquisition/
+│   │   ├── __init__.py
+│   │   ├── fetch_market_data.py
+│   │   └── asset_selection.py
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   └── preprocess_data.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── lstm_model.py
+│   │   └── random_forest_model.py
+│   ├── portfolio_optimization/
+│   │   ├── __init__.py
+│   │   └── efficient_frontier.py
+│   ├── strategy/
+│   │   ├── __init__.py
+│   │   └── investment_strategy.py
+│   ├── alerts/
+│   │   ├── __init__.py
+│   │   └── real_time_alerts.py
+│   └── reporting/
+│       ├── __init__.py
+│       └── generate_reports.py
+├── scripts/
+│   └── update_asset_list.py
+├── main.py
+├── requirements.txt
+└── README.md`
+
 ## Features
 
 - Automated asset selection based on performance and correlation
