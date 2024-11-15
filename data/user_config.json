@@ -1,55 +1,25 @@
 {
-  "initial_monthly_investment": 50,
-  "max_monthly_investment": 80,
-  "investment_horizon_years": 1,
-  "risk_tolerance": "low",
-  "risk_options": ["low", "medium", "high"],
-  "goal": "maximize_return",
-  "strategy_adjustment_trigger": {
-    "min_return_threshold": 0.05,
-    "max_drawdown_threshold": -0.1,
-    "evaluation_frequency_months": 1
-  },
-  "alert_thresholds": {
-    "stock_upper": 0.05,
-    "stock_lower": -0.05,
-    "crypto_upper": 0.1,
-    "crypto_lower": -0.1
-  },
-  "asset_allocation": {
-    "low_risk": {
-      "stocks": 0.3,
-      "bonds": 0.4,
-      "reits": 0.1,
-      "commodities": 0.05,
-      "crypto": 0.05,
-      "savings": 0.1
+    "initial_monthly_investment": 50,
+    "max_monthly_investment": 80,
+    "investment_horizon_months": 12,
+    "risk_tolerance": "low", 
+    "risk_options": "low, medium, high",
+    "goal": "maximize_return",
+    "strategy_adjustment_trigger": {
+      "min_return_threshold": 0.05,
+      "max_drawdown_threshold": -0.1,
+      "evaluation_frequency_months": 1
     },
-    "medium_risk": {
-      "stocks": 0.4,
-      "bonds": 0.3,
-      "reits": 0.1,
-      "commodities": 0.1,
-      "crypto": 0.08,
-      "savings": 0.02
+    "alert_thresholds": {
+      "stock_upper": 0.05,
+      "stock_lower": -0.05,
+      "crypto_upper": 0.1,
+      "crypto_lower": -0.1
     },
-    "high_risk": {
-      "stocks": 0.5,
-      "bonds": 0.2,
-      "reits": 0.1,
-      "commodities": 0.1,
-      "crypto": 0.1,
-      "savings": 0
+    "bigquery": {
+      "project_id": "your_project_id",
+      "dataset_id": "your_dataset_id",
+      "table_id": "tracked_assets"
     }
-  },
-  "stop_loss_percentage": 0.05,
-  "take_profit_percentage": 0.1,
-  "rebalancing_frequency_months": 3,
-  "bond_annual_return": 0.02,
-  "savings_annual_return": 0.01,
-  "bigquery": {
-    "project_id": "your_project_id",
-    "dataset_id": "your_dataset_id",
-    "table_id": "tracked_assets"
   }
-}
+  
