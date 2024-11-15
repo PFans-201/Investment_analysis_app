@@ -1,6 +1,10 @@
 import yfinance as yf 
 from src.models.random_forest_model import predict_short_term_trend 
+import json
 
+with open('data/user_config.json') as f:
+    config = json.load(f)
+    
 def set_alert_thresholds(asset, asset_type):
     if asset_type == 'stock':
         return {
