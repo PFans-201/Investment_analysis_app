@@ -72,3 +72,8 @@ investment-analysis-app/
 ## Usage
 
 After setup, the application will run daily analyses automatically. You can modify the schedule in `main.py` if needed. Check the `output/` directory for generated reports and the SQL database for stored monthly summaries.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/PFans-201/Investment_analysis_app/blob/main/LICENSE) file for details.
+
